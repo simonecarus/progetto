@@ -1,0 +1,105 @@
+codice_corso,descrizione_corso,codice_materia,descrizione_materia,matricola_studente,cognome_studente,nome_studente
+C001,Ingegneria Informatica,M101,Programmazione 1,780604,Taccola,Giuseppina
+C001,Ingegneria Informatica,M101,Programmazione 1,215361,Trebbi,Emilio
+C001,Ingegneria Informatica,M101,Programmazione 1,768081,Fanucci,Mauro
+C001,Ingegneria Informatica,M101,Programmazione 1,800363,Tassoni,Costantino
+C001,Ingegneria Informatica,M101,Programmazione 1,538559,Loredan,Paulina
+C001,Ingegneria Informatica,M101,Programmazione 1,558526,Ajello,Pellegrino
+C001,Ingegneria Informatica,M102,Matematica Discreta,800363,Guarana,Liberto
+C001,Ingegneria Informatica,M102,Matematica Discreta,263052,Magnani,Osvaldo
+C001,Ingegneria Informatica,M102,Matematica Discreta,232882,Campano,Silvestro
+C001,Ingegneria Informatica,M102,Matematica Discreta,316562,Samele,Franco
+C001,Ingegneria Informatica,M102,Matematica Discreta,780604,Taccola,Giuseppina
+C001,Ingegneria Informatica,M102,Matematica Discreta,230953,Tassoni,Costantino
+C001,Ingegneria Informatica,M102,Matematica Discreta,762073,Migliaccio,Eva
+C001,Ingegneria Informatica,M102,Matematica Discreta,785403,Cossiga,Rosa
+C001,Ingegneria Informatica,M103,Architettura degli Elaboratori,316562,Samele,Franco
+C001,Ingegneria Informatica,M103,Architettura degli Elaboratori,243806,Gozzi,Loredana
+C001,Ingegneria Informatica,M103,Architettura degli Elaboratori,762073,Migliaccio,Eva
+C001,Ingegneria Informatica,M103,Architettura degli Elaboratori,800363,Guarana,Liberto
+C001,Ingegneria Informatica,M103,Architettura degli Elaboratori,343534,Magnani,Baldassare
+C001,Ingegneria Informatica,M104,Algoritmi e Strutture Dati,762073,Migliaccio,Eva
+C001,Ingegneria Informatica,M104,Algoritmi e Strutture Dati,343534,Tassoni,Costantino
+C001,Ingegneria Informatica,M104,Algoritmi e Strutture Dati,879276,Brancaccio,Romina
+C001,Ingegneria Informatica,M104,Algoritmi e Strutture Dati,558526,Ajello,Pellegrino
+C001,Ingegneria Informatica,M104,Algoritmi e Strutture Dati,800363,Guarana,Liberto
+C001,Ingegneria Informatica,M105,Sistemi Operativi,927551,Grassi,Puccio
+C001,Ingegneria Informatica,M105,Sistemi Operativi,768081,Fanucci,Mauro
+C001,Ingegneria Informatica,M105,Sistemi Operativi,800363,Guarana,Liberto
+C001,Ingegneria Informatica,M105,Sistemi Operativi,879276,Brancaccio,Romina
+C001,Ingegneria Informatica,M105,Sistemi Operativi,230953,Tassoni,Costantino
+C002,Scienze Biologiche,M201,Biologia Molecolare,851008,Mortati,Gianni
+C002,Scienze Biologiche,M201,Biologia Molecolare,574257,Interminei,Livio
+C002,Scienze Biologiche,M201,Biologia Molecolare,996875,Villadicani,Marcantonio
+C002,Scienze Biologiche,M201,Biologia Molecolare,317814,Soranzo,Camillo
+C002,Scienze Biologiche,M201,Biologia Molecolare,579890,Sonnino,Sabatino
+C002,Scienze Biologiche,M201,Biologia Molecolare,639090,Pace,Evangelista
+C002,Scienze Biologiche,M201,Biologia Molecolare,285536,Tutino,Melania
+C002,Scienze Biologiche,M201,Biologia Molecolare,169354,Cadorna,Vincenza
+C002,Scienze Biologiche,M201,Biologia Molecolare,318966,Tagliafierro,Angelina
+C002,Scienze Biologiche,M202,Genetica,996875,Villadicani,Marcantonio
+C002,Scienze Biologiche,M202,Genetica,169354,Cadorna,Vincenza
+C002,Scienze Biologiche,M202,Genetica,639090,Pace,Evangelista
+C002,Scienze Biologiche,M202,Genetica,896973,Golgi,Lauretta
+C002,Scienze Biologiche,M202,Genetica,969326,Mondaini,Luca
+C002,Scienze Biologiche,M202,Genetica,873822,Monte,Domenico
+C002,Scienze Biologiche,M203,Chimica Organica,254681,Manolesso,Nicola
+C002,Scienze Biologiche,M203,Chimica Organica,206954,Pincherle,Tina
+C002,Scienze Biologiche,M203,Chimica Organica,996875,Villadicani,Marcantonio
+C002,Scienze Biologiche,M203,Chimica Organica,976075,Offredi,Loredana
+C002,Scienze Biologiche,M203,Chimica Organica,969326,Mondaini,Luca
+C002,Scienze Biologiche,M203,Chimica Organica,285536,Tutino,Melania
+C002,Scienze Biologiche,M203,Chimica Organica,896973,Golgi,Lauretta
+C002,Scienze Biologiche,M203,Chimica Organica,174065,Vanvitelli,Stella
+C002,Scienze Biologiche,M203,Chimica Organica,873822,Monte,Domenico
+C002,Scienze Biologiche,M203,Chimica Organica,169354,Cadorna,Vincenza
+C002,Scienze Biologiche,M204,Fisica Medica,789259,Zanzi,Gianmarco
+C002,Scienze Biologiche,M204,Fisica Medica,174065,Vanvitelli,Stella
+C002,Scienze Biologiche,M204,Fisica Medica,317814,Soranzo,Camillo
+C002,Scienze Biologiche,M204,Fisica Medica,326558,Torlonia,Dario
+C002,Scienze Biologiche,M204,Fisica Medica,830889,Comencini,Raimondo
+C002,Scienze Biologiche,M204,Fisica Medica,996875,Villadicani,Marcantonio
+C002,Scienze Biologiche,M204,Fisica Medica,579890,Sonnino,Sabatino
+C002,Scienze Biologiche,M204,Fisica Medica,639090,Pace,Evangelista
+C002,Scienze Biologiche,M204,Fisica Medica,873822,Monte,Domenico
+C002,Scienze Biologiche,M205,Biochimica,317814,Soranzo,Camillo
+C002,Scienze Biologiche,M205,Biochimica,206954,Pincherle,Tina
+C002,Scienze Biologiche,M205,Biochimica,579890,Sonnino,Sabatino
+C002,Scienze Biologiche,M205,Biochimica,574257,Interminei,Livio
+C002,Scienze Biologiche,M205,Biochimica,326558,Torlonia,Dario
+C002,Scienze Biologiche,M205,Biochimica,873822,Monte,Domenico
+C003,Economia Aziendale,M301,Microeconomia,545537,Ariosto,Antonino
+C003,Economia Aziendale,M301,Microeconomia,263498,Tencalla,Lisa
+C003,Economia Aziendale,M301,Microeconomia,182973,Gabba,Flavia
+C003,Economia Aziendale,M301,Microeconomia,227628,Bembo,Ignazio
+C003,Economia Aziendale,M301,Microeconomia,436878,Pennetta,Giacomo
+C003,Economia Aziendale,M301,Microeconomia,507892,Righi,Guarino
+C003,Economia Aziendale,M301,Microeconomia,224675,Chiesa,Sandro
+C003,Economia Aziendale,M302,Macroeconomia,263498,Tencalla,Lisa
+C003,Economia Aziendale,M302,Macroeconomia,545537,Ariosto,Antonino
+C003,Economia Aziendale,M302,Macroeconomia,850447,Palmisano,Licia
+C003,Economia Aziendale,M302,Macroeconomia,370468,Babbo,Aldo
+C003,Economia Aziendale,M302,Macroeconomia,854501,Vasari,Rosalia
+C003,Economia Aziendale,M303,Ragioneria,854501,Vasari,Rosalia
+C003,Economia Aziendale,M303,Ragioneria,263498,Tencalla,Lisa
+C003,Economia Aziendale,M303,Ragioneria,839657,Nadi,Enzio
+C003,Economia Aziendale,M303,Ragioneria,889643,Casadei,Raffaele
+C003,Economia Aziendale,M303,Ragioneria,182973,Gabba,Flavia
+C003,Economia Aziendale,M303,Ragioneria,436498,Abatantuono,Antonina
+C003,Economia Aziendale,M303,Ragioneria,545537,Ariosto,Antonino
+C003,Economia Aziendale,M303,Ragioneria,224675,Chiesa,Sandro
+C003,Economia Aziendale,M303,Ragioneria,227628,Bembo,Ignazio
+C003,Economia Aziendale,M304,Diritto Commerciale,224675,Chiesa,Sandro
+C003,Economia Aziendale,M304,Diritto Commerciale,436498,Abatantuono,Antonina
+C003,Economia Aziendale,M304,Diritto Commerciale,182973,Gabba,Flavia
+C003,Economia Aziendale,M304,Diritto Commerciale,263498,Tencalla,Lisa
+C003,Economia Aziendale,M304,Diritto Commerciale,370468,Babbo,Aldo
+C003,Economia Aziendale,M305,Statistica,889643,Casadei,Raffaele
+C003,Economia Aziendale,M305,Statistica,938302,Tanzini,Pompeo
+C003,Economia Aziendale,M305,Statistica,436498,Abatantuono,Antonina
+C003,Economia Aziendale,M305,Statistica,370468,Babbo,Aldo
+C003,Economia Aziendale,M305,Statistica,263498,Tencalla,Lisa
+C003,Economia Aziendale,M305,Statistica,839657,Nadi,Enzio
+C003,Economia Aziendale,M305,Statistica,962103,Rosiello,Amadeo
+C003,Economia Aziendale,M305,Statistica,854501,Vasari,Rosalia
+C003,Economia Aziendale,M305,Statistica,507892,Righi,Guarino
