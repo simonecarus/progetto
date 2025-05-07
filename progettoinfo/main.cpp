@@ -22,30 +22,29 @@ void stampamenu() {
     cout << "* X - Esci                                      *\n";
     cout << "*************************************************\n";
 }
-void caricadati(info i){
-        getline(fin,s);
-        while(!fin.eof()){
-
-        getline(fin,i.codcorso,';');
-
-        if(i.codcorso=="")break;
-
-        getline(fin,i.descrizione,';');
-        getline(fin,i.codmat,';');
-        getline(fin,i.matricola,';');
-        getline(fin,i.cognome,';');
-        getline(fin,i.nome);
-        cout<<i.codcorso<<" "<<i.descrizione<<" "<<i.codmat<<" "<<i.matricola<<" "<<i.cognome<<" "<<i.nome<<endl;
-}
-
-int main( info i,)
-{
+void caricadati(){
     ifstream fin("corsi_studenti.csv");
     string s;
     getline(fin,s);
     info i;
+    while(!fin.eof()){
 
+            getline(fin,i.codcorso,';');
+
+    if(i.codcorso=="")break;
+
+    getline(fin,i.descrizione,';');
+    getline(fin,i.codmat,';');
+    getline(fin,i.matricola,';');
+    getline(fin,i.cognome,';');
+    getline(fin,i.nome);
+    cout<<i.codcorso<<" "<<i.descrizione<<" "<<i.codmat<<" "<<i.matricola<<" "<<i.cognome<<" "<<i.nome<<endl;
     }
+}
+int main(){
+
+
+
     bool finito=false;
     char ch;
 
@@ -56,7 +55,7 @@ int main( info i,)
         switch (ch) {
 
             case '0':
-                caricadati(i);
+                caricadati();
 
                 break;
 
