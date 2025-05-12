@@ -22,7 +22,7 @@ void stampamenu() {
     cout << "* X - Esci                                      *\n";
     cout << "*************************************************\n";
 }
-void caricadati(){
+void caricadati(vector<info> &vet){
     ifstream fin("corsi_studenti.csv");
     string s;
     getline(fin,s);
@@ -38,13 +38,14 @@ void caricadati(){
     getline(fin,i.matricola,';');
     getline(fin,i.cognome,';');
     getline(fin,i.nome);
+    vet.push_back(i);
     cout<<i.codcorso<<" "<<i.descrizione<<" "<<i.codmat<<" "<<i.matricola<<" "<<i.cognome<<" "<<i.nome<<endl;
     }
 }
 int main(){
 
 
-
+    vector<info> vet;
     bool finito=false;
     char ch;
 
@@ -55,7 +56,7 @@ int main(){
         switch (ch) {
 
             case '0':
-                caricadati();
+                caricadati(vet);
 
                 break;
 
