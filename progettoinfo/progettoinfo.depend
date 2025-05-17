@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1747463614 source:d:\users\carusos\desktop\portablegit\progetto\progettoinfo\main.cpp
+	<bits/stdc++.h>
+	<iostream>
+	<fstream>
+	<vector>
+	<map>
+

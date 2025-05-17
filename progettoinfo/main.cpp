@@ -1,11 +1,16 @@
 #include <bits/stdc++.h>
 #include <iostream>
 #include <fstream>
-
+#include<vector>
+#include<map>
 using namespace std;
 struct info{
     string codcorso,descrizione,codmat,matricola,cognome,nome;
 };
+ vector<info> vett;
+map<string,info>matricola;
+
+
 void stampamenu() {
     cout << "*************************************************\n";
     cout << "* 0 - Carica dati da file                       *\n";
@@ -22,7 +27,7 @@ void stampamenu() {
     cout << "* X - Esci                                      *\n";
     cout << "*************************************************\n";
 }
-void caricadati(vector<info> &vet){
+void caricadati(vector<info> &vet,map<string,info>matr){
     ifstream fin("corsi_studenti.csv");
     string s;
     getline(fin,s);
@@ -41,11 +46,25 @@ void caricadati(vector<info> &vet){
     vet.push_back(i);
     cout<<i.codcorso<<" "<<i.descrizione<<" "<<i.codmat<<" "<<i.matricola<<" "<<i.cognome<<" "<<i.nome<<endl;
     }
+    fin.close();
+}
+void cercaMatri(map<string,info>matri){
+    info i;
+    string m2;
+    cin>>m2;
+    if(m2==i.matricola){
+        for(auto x : matri) {
+            cout << x.first<<" : ";
+            cout << x.second.descrizione <<endl;
+        }
+    }
 }
 int main(){
 
 
-    vector<info> vet;
+
+
+
     bool finito=false;
     char ch;
 
@@ -56,12 +75,12 @@ int main(){
         switch (ch) {
 
             case '0':
-                caricadati(vet);
+                caricadati(vett, matricola);
 
                 break;
 
             case '1':
-
+                cercaMatri(matricola);
                 break;
 
             case '2':
