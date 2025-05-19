@@ -7,11 +7,13 @@ using namespace std;
 struct info{
     string codcorso,descrizione,codmat,matricola,cognome,nome;
 };
- vector<info> vett;
+
+vector<info> vett;
 map<string,info>matricola;
+vector<info> elenco;
 
 
-void stampamenu() {
+void stampamenu(){
     cout << "*************************************************\n";
     cout << "* 0 - Carica dati da file                       *\n";
     cout << "* 1 - Cerca corsi studente (matricola)          *\n";
@@ -59,12 +61,19 @@ void cercaMatri(map<string,info>matri){
         }
     }
 }
+void elencoStudenti(vector<info> &elen, string corso){
+    bool trovato = false;
+    for (auto x : elen){
+        if (x.codcorso == corso){
+            cout << "Studente: " << x.nome << endl;
+            trovato = true;
+        }
+    }
+    if (!trovato) cout << "Nessuno studente trovato" << endl;
+}
 int main(){
 
-
-
-
-
+    string corso;
     bool finito=false;
     char ch;
 
@@ -88,8 +97,11 @@ int main(){
                 break;
 
             case '3':
-
+                cout << "Inserisci corso di cui si vuole visualizzare l'elenco di studenti: " << endl;
+                cin >> corso;
+                elencoStudenti(vett, corso);
                 break;
+
 
             case '4':
 
