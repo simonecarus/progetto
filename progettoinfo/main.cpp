@@ -4,12 +4,24 @@
 #include<vector>
 #include<map>
 using namespace std;
+
 struct info{
-    string codcorso,descrizione,codmat,matricola,cognome,nome;
+string codcorso, descrizione, codmat, desc_corso, matricola, cognome, nome;
+
 };
 
+/*struct studente{
+    string matricola_studente, cognome_studente, nome_studente;
+};
+struct materia{
+    string codice_materia, descrizione_materia,
+};
+struct corso{
+    string codice_corso, descrizione_corso
+};
+*/
 vector<info> vett;
-map<string,info>matricola;
+map<string,info>studente_per_matricola;
 vector<info> elenco;
 
 
@@ -29,47 +41,52 @@ void stampamenu(){
     cout << "* X - Esci                                      *\n";
     cout << "*************************************************\n";
 }
-void caricadati(vector<info> &vet,map<string,info>matr){
+void caricadati(vector<info>& vet,map<string,info>&matri){
     ifstream fin("corsi_studenti.csv");
     string s;
     getline(fin,s);
     info i;
     while(!fin.eof()){
 
-            getline(fin,i.codcorso,';');
+    getline(fin,i.codcorso,',');
 
-    if(i.codcorso=="")break;
+    if(i.codcorso=="") break;
 
-    getline(fin,i.descrizione,';');
-    getline(fin,i.codmat,';');
-    getline(fin,i.matricola,';');
-    getline(fin,i.cognome,';');
+    getline(fin,i.descrizione,',');
+    getline(fin,i.codmat,',');
+    getline(fin,i.desc_corso,',');
+    getline(fin,i.matricola,',');
+    getline(fin,i.cognome,',');
     getline(fin,i.nome);
     vet.push_back(i);
-    cout<<i.codcorso<<" "<<i.descrizione<<" "<<i.codmat<<" "<<i.matricola<<" "<<i.cognome<<" "<<i.nome<<endl;
+    matri[i.matricola] = i;
+
+    cout<<i.codcorso<<" "<<i.descrizione<<" "<<i.codmat<<" "<<i.desc_corso<<" "<<i.matricola<<" "<<i.cognome<<" "<<i.nome<<endl;
     }
     fin.close();
 }
 void cercaMatri(map<string,info>matri){
-    info i;
     string m2;
     cin>>m2;
-    if(m2==i.matricola){
-        for(auto x : matri) {
-            cout << x.first<<" : ";
-            cout << x.second.descrizione <<endl;
+    for(auto& x : matri) {
+        info i=x.second;
+        if(m2==i.matricola){
+            cout << x.first<<" = ";
+            cout<<i.codcorso<<" "<<i.descrizione<<" "<<i.codmat<<" "<<i.desc_corso<<" "<<i.matricola<<" "<<i.cognome<<" "<<i.nome<<endl;
+            cout << endl;
         }
     }
 }
-void elencoStudenti(vector<info> &elen, string corso){
+
+void elencoStudenti(vector<info> elen, string corso){
     bool trovato = false;
     for (auto x : elen){
-        if (x.codcorso == corso){
-            cout << "Studente: " << x.nome << endl;
+        info i;
+        if (i.codcorso == corso){
+            cout << "Studente: " << x.nome << " " << x.cognome << endl;
             trovato = true;
         }
     }
-    if (!trovato) cout << "Nessuno studente trovato" << endl;
 }
 int main(){
 
@@ -84,12 +101,12 @@ int main(){
         switch (ch) {
 
             case '0':
-                caricadati(vett, matricola);
+                caricadati(vett, studente_per_matricola);
 
                 break;
 
             case '1':
-                cercaMatri(matricola);
+                cercaMatri(studente_per_matricola);
                 break;
 
             case '2':
@@ -98,8 +115,8 @@ int main(){
 
             case '3':
                 cout << "Inserisci corso di cui si vuole visualizzare l'elenco di studenti: " << endl;
-                cin >> corso;
                 elencoStudenti(vett, corso);
+                getline(cin, corso);
                 break;
 
 
