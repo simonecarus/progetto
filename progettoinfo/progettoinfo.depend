@@ -1,10 +1,11 @@
 # depslib dependency file v1.0
-1747463614 source:d:\users\carusos\desktop\portablegit\progetto\progettoinfo\main.cpp
-	<bits/stdc++.h>
+1748332877 source:d:\users\carusos\desktop\portablegit\progetto\progettoinfo\main.cpp
 	<iostream>
 	<fstream>
 	<vector>
 	<map>
+	<fstream>
+	<string>
 
 1747815026 source:d:\users\marcianof\desktop\portablegit\progetto\progettoinfo\main.cpp
 	<bits/stdc++.h>
